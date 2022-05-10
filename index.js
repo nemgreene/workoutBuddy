@@ -26,9 +26,6 @@ app.use(bodyParser.json());
 //import routes
 require("./routes/quoteRoute.js")(app);
 
-// Heroku deploy RUN
-// const PORT = process.env.PORT || 3001;
-// NPM RUN
 const PORT = process.env.PORT || 5000;
 
 // Accessing the path module
