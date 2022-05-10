@@ -15,8 +15,6 @@ const QuotePage = () => {
       .get(`/quotes/get`)
       .then((res) => {
         setQuotesList(res.data);
-        console.log("setQuoteList");
-        console.log(res.data);
       })
       .catch((err) => {
         console.log("ERR", err);
@@ -71,7 +69,6 @@ const QuotePage = () => {
         <div>
           {quotesList.length > 0
             ? quotesList.map((ele) => {
-                console.log("hey");
                 return (
                   <div key={ele._id}>
                     <Quote quote={ele.quote} author={ele.author} />
