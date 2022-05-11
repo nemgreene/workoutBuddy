@@ -1,7 +1,5 @@
 import axios from "axios";
-// In local development
 // const url = "http://localhost:5000/";
-// In production
 const url = "/";
 
 export class ApiClient {

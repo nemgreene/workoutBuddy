@@ -98,6 +98,9 @@ function App() {
       let res = window.confirm(
         "Exercises marked as incomplete, do you wish to continue?"
       );
+      if (!res) {
+        return;
+      }
       let patient = [...active.exercises];
       indices.map((v) => {
         let empty = active.exercises[v];

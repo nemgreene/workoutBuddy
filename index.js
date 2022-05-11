@@ -10,13 +10,16 @@ app.use(cors());
 
 //import your models
 require("./models/quote");
+const PORT = process.env.PORT || 5000;
 
 mongoose
   .connect(process.env.MONGO_STRING, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-  .then(() => console.log("MongoDB has been connected"))
+  .then(() =>
+    console.log("MongoDB has been connected on port " + process.env.port)
+  )
   .catch((err) => console.log(err));
 
 //middleware
@@ -24,9 +27,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 //import routes
-require("./routes/quoteRoute.js")(app);
-
-const PORT = process.env.PORT || 5000;
+require("./routes/scheduleRoutes.js")(app);
 
 // Accessing the path module
 const path = require("path");
