@@ -13,13 +13,20 @@ const fs = require("fs");
 
 require("dotenv").config();
 
+mongoose
+  .connect(process.env.MONGO_STRING, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => console.log("MongoDB has been connected"))
+  .catch((err) => console.log(err));
+
+// defining the Express app
 const app = express();
 
 app.use(cors());
 //import your models
 require("./models/quote");
-
-// defining the Express app
 
 // adding Helmet to enhance your API's security
 app.use(helmet());
@@ -93,14 +100,6 @@ app.use(express.static(path.resolve(__dirname, "../client/build")));
 app.get("*", function (request, response) {
   response.sendFile(path.resolve(__dirname, "../client/build", "index.html"));
 });
-
-mongoose
-  .connect(process.env.MONGO_STRING, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => console.log("MongoDB has been connected"))
-  .catch((err) => console.log(err));
 
 //middleware
 app.use(bodyParser.urlencoded({ extended: true }));
