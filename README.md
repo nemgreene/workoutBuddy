@@ -15,8 +15,10 @@
 
 ## API endpoints
 
-- `POST /quotes/post ` - create a new document containing a quote and the corresponding author.
-- `GET /quotes/get ` - get all the quotes from the database.
+- `POST /updateDay ` - updateDay
+- `POST /template ` - loadJson from local files on server
+- `GET / blockInsert` - loadJson from local files on server and save to db
+- `GET /schedule ` - get all days from DB.
 
 ## Getting started
 
