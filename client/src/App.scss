@@ -119,6 +119,15 @@ $row6: 6vh;
   max-height: 40vh;
   border-bottom: 1px solid white;
 }
+
+.activeTableScrollContainer {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.activeTableScrollContainer::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
 .activeScrollChild {
   position: relative;
   max-width: 100vw !important;

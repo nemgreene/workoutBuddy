@@ -93,7 +93,10 @@ function AddCustom({ active, cActive, collapse, cCollapse, schedule }) {
                 bg="dark"
                 placeholder="Name"
               ></Form.Control>
-              <ul className="suggestions">
+              <ul
+                className="suggestions"
+                style={{ border: !formData ? "none" : "inherit" }}
+              >
                 {formData.name
                   ? suggestions.map((v, i) => (
                       <li
@@ -109,22 +112,24 @@ function AddCustom({ active, cActive, collapse, cCollapse, schedule }) {
                     ))
                   : null}
               </ul>
-              <Row>
+              <Row className="addCustomRow">
                 <Col className="addCustomCol">
                   <Form.Control
                     value={formData.sr}
                     onChange={(e) => changeHandler(e)}
                     name="sets"
-                    className="addCustomForm"
+                    className="addCustomForm addSets"
                     variant="dark"
                     bg="dark"
                     placeholder="Sets"
                   ></Form.Control>
+                </Col>
+                <Col className="addCustomCol">
                   <Form.Control
                     value={formData.sr}
                     onChange={(e) => changeHandler(e)}
                     name="reps"
-                    className="addCustomForm"
+                    className="addCustomForm addSets"
                     variant="dark"
                     bg="dark"
                     placeholder="Reps"

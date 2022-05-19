@@ -14,7 +14,7 @@ function InputComponent({ activeEx, client, active, cActive, cActiveEx }) {
       cText((p) => ({
         ...p,
         kg: activeEx.weight,
-        lb: (activeEx.weight / 2.205).toFixed(3),
+        lb: (activeEx.weight * 2.205).toFixed(3),
       }));
     } else {
       cText((p) => ({
@@ -70,7 +70,7 @@ function InputComponent({ activeEx, client, active, cActive, cActiveEx }) {
                       return {
                         ...c,
                         kg: e.target.value,
-                        lb: (e.target.value / 2.205).toFixed(3),
+                        lb: (e.target.value * 2.205).toFixed(3),
                       };
                     } else {
                       return c;

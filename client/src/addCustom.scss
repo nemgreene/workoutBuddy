@@ -46,7 +46,7 @@
   border: 1px solid #999;
   border-top-width: 0;
   list-style: none;
-  margin-top: 0;
+  margin-top: 17vh;
   max-height: 143px;
   overflow-y: auto;
   padding-left: 0;
@@ -63,9 +63,21 @@
 }
 .addCustomCol {
   flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .addCustomForm {
+  margin: 2vh 2vw;
   width: 90vw;
+}
+.addCustomRow {
+  margin: 0 2vw;
+}
+
+.addSets,
+.addReps {
+  width: 35vw;
 }
 // .suggestions li:not(:last-of-type) {
 //   border-bottom: 1px solid #999;
