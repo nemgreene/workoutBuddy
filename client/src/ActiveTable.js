@@ -11,10 +11,15 @@ function ActiveTable({ data, activeEx, cActiveEx, schedule }) {
 
   const parentRef = useRef(null);
   const childRef = useRef(null);
+
   const [scrolled, cScrolled] = useState(true);
-  const completed = { border: "solid 1px green" };
+  const completed = {
+    border: "solid 1px #00FF0020",
+    backgroundColor: "#00FF0010",
+  };
   const active = { border: "solid 1px orange" };
   const increase = {
+    backgroundColor: "none",
     border: "1px solid white",
     boxSizing: "border-box",
     MozBoxSizing: "border-box",
@@ -31,7 +36,6 @@ function ActiveTable({ data, activeEx, cActiveEx, schedule }) {
     }
     if (w.includes("lb")) {
       return `${(num / 2.205).toFixed(1)}/${num}`;
-      // text.kg * 2.205).toFixed(3)
     }
     if (w.includes("/")) {
       let kg = w.split("/")[0];

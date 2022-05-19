@@ -25,9 +25,9 @@ function App() {
   const successStyle = active?.complete
     ? {
         border: "1px solid green",
-        backgroundImage: "radial-gradient(green 1px, #2c3034 1px)",
+        backgroundImage: "radial-gradient(#00FF0025 3px, #2c3034 1px)",
         backgroundPosition: " 0 0",
-        backgroundSize: "25px 25px",
+        backgroundSize: "30px 30px",
       }
     : { backgroundColor: "#2c3034", border: "1px solid #fff" };
 
