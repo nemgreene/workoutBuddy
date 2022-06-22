@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
 const Day = require("../Day.js");
+const fs = require("fs");
+
 module.exports = (app) => {
   app.post("/updateDay", async (req, res) => {
     try {
@@ -30,6 +32,18 @@ module.exports = (app) => {
       return [...p, ...c];
     });
   }
+
+  app.post("/singleInsert/:id", async (req, res) => {
+    console.log(req.params.id);
+    data = JSON.parse(
+      await fs.readFileSync(`./Blocks/block${req.params.id}.json`, "utf8")
+    );
+    data.map(async (v) => {
+      let insert = new Day(v);
+      await insert.save();
+    });
+    res.send("success");
+  });
 
   app.get("/template", async (req, res) => {
     res.send(await readArray());

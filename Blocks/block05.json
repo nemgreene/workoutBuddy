@@ -41,11 +41,11 @@
         "weight": ""
       },
       {
-        "name": "Pronated Pulldown",
+        "name": "Chin-Up",
         "warmup": 1,
-        "sets": 3,
-        "reps": 10,
-        "percentage": "RPE8",
+        "sets": 4,
+        "reps": 8,
+        "percentage": "RPE7",
         "notes": "",
         "weight": ""
       },
@@ -53,7 +53,7 @@
         "name": "Supinated EZ Curl",
         "warmup": 1,
         "sets": 3,
-        "reps": "15/15",
+        "reps": "10+2",
         "percentage": "RPE10",
         "notes": "",
         "weight": ""
@@ -79,52 +79,52 @@
         "warmup": 3,
         "sets": 3,
         "reps": 5,
-        "percentage": "82.5%",
+        "percentage": "87.5%",
         "notes": "",
         "weight": ""
       },
       {
-        "name": "Low to High cable fly",
+        "name": "Low Incline DB Press",
         "warmup": 0,
         "sets": 3,
         "reps": 15,
-        "percentage": "RPE9",
+        "percentage": "RPE8",
         "notes": "",
         "weight": ""
       },
       {
         "name": "Hip thrust/Romanian deadlift",
         "warmup": 2,
-        "sets": 3,
+        "sets": 4,
         "reps": 12,
-        "percentage": "RPE8",
+        "percentage": "RPE7",
         "notes": "",
         "weight": ""
       },
       {
-        "name": "Chest-Supported T-Bar Row",
+        "name": "Dumbell Row",
         "warmup": 1,
-        "sets": 3,
-        "reps": 15,
-        "percentage": "RPE8",
+        "sets": 4,
+        "reps": 12,
+        "percentage": "RPE7",
         "notes": "",
         "weight": ""
       },
       {
-        "name": "Arnold Press",
+        "name": "DB Lat. Raise",
         "warmup": 0,
-        "sets": 3,
-        "reps": 10,
-        "percentage": "RPE8",
+        "sets": 4,
+        "reps": 15,
+        "percentage": "RPE7",
         "notes": "",
         "weight": ""
       },
       {
-        "name": "Tricep Pressdown",
+        "name": "Overhead Tricep Extension",
         "warmup": 0,
         "sets": 3,
         "reps": 15,
-        "percentage": "RPE8",
+        "percentage": "RPE7",
         "notes": "",
         "weight": ""
       },
@@ -133,7 +133,7 @@
         "warmup": 1,
         "sets": 3,
         "reps": 12,
-        "percentage": "RPE8",
+        "percentage": "RPE7",
         "notes": "",
         "weight": ""
       }
@@ -154,20 +154,20 @@
         "weight": ""
       },
       {
-        "name": "Humble Row",
+        "name": "Chest-Supported T-Bar Row",
         "warmup": 1,
-        "sets": 3,
+        "sets": 4,
         "reps": 10,
-        "percentage": "RPE9",
+        "percentage": "RPE8",
         "notes": "",
         "weight": ""
       },
       {
-        "name": "Leg Press",
+        "name": "Single Leg Press",
         "warmup": 2,
-        "sets": 3,
+        "sets": 4,
         "reps": 15,
-        "percentage": "RPE8",
+        "percentage": "RPE7",
         "notes": "",
         "weight": ""
       },
@@ -176,25 +176,25 @@
         "warmup": 1,
         "sets": 4,
         "reps": 8,
-        "percentage": "RPE8",
+        "percentage": "RPE7",
         "notes": "",
         "weight": ""
       },
       {
         "name": "Cable Upright Row",
         "warmup": 0,
-        "sets": 3,
+        "sets": 4,
         "reps": 10,
-        "percentage": "RPE8",
+        "percentage": "RPE7",
         "notes": "",
         "weight": ""
       },
       {
         "name": "Hammer Curl",
         "warmup": 0,
-        "sets": 3,
+        "sets": 4,
         "reps": 8,
-        "percentage": "RPE9",
+        "percentage": "RPE7",
         "notes": "",
         "weight": ""
       }
@@ -208,36 +208,36 @@
       {
         "name": "Deadlift",
         "warmup": 3,
-        "sets": 3,
-        "reps": 5,
-        "percentage": "82.5%",
+        "sets": 1,
+        "reps": 2,
+        "percentage": "90%",
         "notes": "",
         "weight": ""
       },
       {
-        "name": "Dip",
+        "name": "Decline Bench Press",
         "warmup": 2,
-        "sets": 3,
-        "reps": 10,
-        "percentage": "RPE9",
+        "sets": 4,
+        "reps": 8,
+        "percentage": "RPE7",
         "notes": "",
         "weight": ""
       },
       {
         "name": "Glute Ham Raise",
         "warmup": 0,
-        "sets": 3,
+        "sets": 4,
         "reps": 10,
-        "percentage": "RPE8",
+        "percentage": "RPE7",
         "notes": "",
         "weight": ""
       },
       {
         "name": "Leg Extension",
         "warmup": 1,
-        "sets": 3,
-        "reps": 15,
-        "percentage": "RPE8",
+        "sets": 4,
+        "reps": 12,
+        "percentage": "RPE7",
         "notes": "",
         "weight": ""
       },
@@ -246,7 +246,7 @@
         "warmup": 1,
         "sets": 3,
         "reps": 15,
-        "percentage": "RPE8",
+        "percentage": "RPE7",
         "notes": "",
         "weight": ""
       },
@@ -264,7 +264,7 @@
         "warmup": 1,
         "sets": 3,
         "reps": 20,
-        "percentage": "RPE8",
+        "percentage": "RPE7",
         "notes": "",
         "weight": ""
       },
@@ -273,7 +273,7 @@
         "warmup": 1,
         "sets": 3,
         "reps": 15,
-        "percentage": "RPE8",
+        "percentage": "RPE7",
         "notes": "",
         "weight": ""
       }
@@ -287,9 +287,9 @@
       {
         "name": "Overhead Press",
         "warmup": 3,
-        "sets": 4,
-        "reps": 10,
-        "percentage": "67.5%",
+        "sets": 3,
+        "reps": 8,
+        "percentage": "80%",
         "notes": "",
         "weight": ""
       },
@@ -298,25 +298,25 @@
         "warmup": 1,
         "sets": 3,
         "reps": 8,
-        "percentage": "RPE9",
+        "percentage": "RPE8",
         "notes": "",
         "weight": ""
       },
       {
-        "name": "Cable Seated Row",
+        "name": "Pendlay Row",
         "warmup": 1,
-        "sets": 3,
-        "reps": 12,
-        "percentage": "RPE8",
+        "sets": 4,
+        "reps": 10,
+        "percentage": "RPE7",
         "notes": "",
         "weight": ""
       },
       {
         "name": "Seated Hip Abduction",
         "warmup": 1,
-        "sets": 3,
+        "sets": 4,
         "reps": 20,
-        "percentage": "RPE8",
+        "percentage": "RPE7",
         "notes": "",
         "weight": ""
       },
@@ -325,7 +325,7 @@
         "warmup": 1,
         "sets": 2,
         "reps": 10,
-        "percentage": "RPE8",
+        "percentage": "RPE7",
         "notes": "",
         "weight": ""
       },
@@ -343,7 +343,7 @@
         "warmup": 1,
         "sets": 4,
         "reps": 12,
-        "percentage": "RPE8",
+        "percentage": "RPE7",
         "notes": "",
         "weight": ""
       },
@@ -352,7 +352,7 @@
         "warmup": 0,
         "sets": 2,
         "reps": "RPE Only",
-        "percentage": "RPE8",
+        "percentage": "RPE7",
         "notes": "",
         "weight": ""
       }
