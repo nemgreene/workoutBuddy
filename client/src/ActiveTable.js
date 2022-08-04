@@ -44,7 +44,6 @@ function ActiveTable({ data, activeEx, cActiveEx, schedule }) {
       return `${num}/${(num * 2.205).toFixed(1)}`;
     }
   };
-
   return (
     <div className="activeTableContainer">
       <Row className="bannerRow">
@@ -116,6 +115,9 @@ function ActiveTable({ data, activeEx, cActiveEx, schedule }) {
                 {name === activeEx?.name ? (
                   <Row>
                     <Col className="activeNotesRow">{notes || "No Notes"}</Col>
+                    <Col xs={2}>
+                      {activeEx?.legacy.map((v) => v.split("/")[0] + " kg")}
+                    </Col>
                   </Row>
                 ) : null}
               </React.Fragment>

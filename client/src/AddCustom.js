@@ -46,7 +46,7 @@ function AddCustom({ active, cActive, collapse, cCollapse, schedule }) {
   }, [schedule]);
 
   const loadFilter = () => {
-    if (!schedule) {
+    if (!schedule || schedule?.length == 0) {
       return;
     }
     cMaster(

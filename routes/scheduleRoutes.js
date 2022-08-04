@@ -65,4 +65,21 @@ module.exports = (app) => {
     );
     res.send(ret);
   });
+
+  app.get("/cycleReset", async (req, res) => {
+    let ret = await Day.find();
+    ret.map(async (d) => {
+      updated = d.exercises.map((e) => ({
+        ...e,
+        legacy: e.legacy ? [...e.legacy, e.weight] : [e.weight],
+        weight: "",
+      }));
+      // console.log(updated);
+      await Day.findByIdAndUpdate(d._id, {
+        exercises: updated,
+        completed: false,
+      });
+    });
+    res.send("ok");
+  });
 };

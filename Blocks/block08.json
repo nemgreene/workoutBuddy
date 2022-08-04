@@ -1,0 +1,352 @@
+[
+  {
+    "day": 36,
+    "complete": false,
+    "focus": "Lower Body",
+    "exercises": [
+      {
+        "name": "Back Squat",
+        "warmup": 0,
+        "sets": 3,
+        "reps": 8,
+        "percentage": "75%",
+        "notes": "",
+        "weight": ""
+      },
+      {
+        "name": "Overhead Press",
+        "warmup": 2,
+        "sets": 4,
+        "reps": 5,
+        "percentage": "80%",
+        "notes": "",
+        "weight": ""
+      },
+      {
+        "name": "Swiss Ball Leg Curl",
+        "warmup": 1,
+        "sets": 3,
+        "reps": 10,
+        "percentage": "RPE8",
+        "notes": "",
+        "weight": ""
+      },
+      {
+        "name": "Chin-Up",
+        "warmup": 1,
+        "sets": 4,
+        "reps": 8,
+        "percentage": "RPE8",
+        "notes": "",
+        "weight": ""
+      },
+      {
+        "name": "Supinated EZ Curl",
+        "warmup": 1,
+        "sets": 3,
+        "reps": "10+2",
+        "percentage": "RPE10",
+        "notes": "",
+        "weight": ""
+      },
+      {
+        "name": "Hanging Leg Raise",
+        "warmup": 1,
+        "sets": 3,
+        "reps": 12,
+        "percentage": "RPE8",
+        "notes": "",
+        "weight": ""
+      }
+    ]
+  },
+  {
+    "day": 37,
+    "complete": false,
+    "focus": "Chest",
+    "exercises": [
+      {
+        "name": "Barbell Bench Press",
+        "warmup": 3,
+        "sets": 4,
+        "reps": 2,
+        "percentage": "90%",
+        "notes": "",
+        "weight": ""
+      },
+      {
+        "name": "Low Incline DB Press",
+        "warmup": 0,
+        "sets": 3,
+        "reps": 15,
+        "percentage": "RPE8",
+        "notes": "",
+        "weight": ""
+      },
+      {
+        "name": "Hip thrust/Romanian deadlift",
+        "warmup": 2,
+        "sets": 4,
+        "reps": 12,
+        "percentage": "RPE8",
+        "notes": "",
+        "weight": ""
+      },
+      {
+        "name": "Dumbell Row",
+        "warmup": 1,
+        "sets": 4,
+        "reps": 12,
+        "percentage": "RPE8",
+        "notes": "",
+        "weight": ""
+      },
+      {
+        "name": "DB Lat. Raise",
+        "warmup": 0,
+        "sets": 4,
+        "reps": 15,
+        "percentage": "RPE8",
+        "notes": "",
+        "weight": ""
+      },
+      {
+        "name": "Overhead Tricep Extension",
+        "warmup": 0,
+        "sets": 3,
+        "reps": 15,
+        "percentage": "RPE8",
+        "notes": "",
+        "weight": ""
+      },
+      {
+        "name": "Hex Bar/Smith Machine Shrug",
+        "warmup": 1,
+        "sets": 3,
+        "reps": 12,
+        "percentage": "RPE8",
+        "notes": "",
+        "weight": ""
+      }
+    ]
+  },
+  {
+    "day": 38,
+    "complete": false,
+    "focus": "Back",
+    "exercises": [
+      {
+        "name": "Weighted Pull-Up",
+        "warmup": 2,
+        "sets": 4,
+        "reps": 6,
+        "percentage": "RPE9",
+        "notes": "",
+        "weight": ""
+      },
+      {
+        "name": "Chest-Supported T-Bar Row",
+        "warmup": 1,
+        "sets": 4,
+        "reps": 10,
+        "percentage": "RPE8",
+        "notes": "",
+        "weight": ""
+      },
+      {
+        "name": "Single Leg Press",
+        "warmup": 2,
+        "sets": 4,
+        "reps": 15,
+        "percentage": "RPE8",
+        "notes": "",
+        "weight": ""
+      },
+      {
+        "name": "Standing Calf Raise",
+        "warmup": 1,
+        "sets": 4,
+        "reps": 8,
+        "percentage": "RPE8",
+        "notes": "",
+        "weight": ""
+      },
+      {
+        "name": "Cable Upright Row",
+        "warmup": 0,
+        "sets": 4,
+        "reps": 10,
+        "percentage": "RPE8",
+        "notes": "",
+        "weight": ""
+      },
+      {
+        "name": "Hammer Curl",
+        "warmup": 0,
+        "sets": 4,
+        "reps": 8,
+        "percentage": "RPE8",
+        "notes": "",
+        "weight": ""
+      }
+    ]
+  },
+  {
+    "day": 39,
+    "complete": false,
+    "focus": "Lower Body",
+    "exercises": [
+      {
+        "name": "Deadlift",
+        "warmup": 3,
+        "sets": 3,
+        "reps": 6,
+        "percentage": "85%",
+        "notes": "",
+        "weight": ""
+      },
+      {
+        "name": "Decline Bench Press",
+        "warmup": 2,
+        "sets": 4,
+        "reps": 8,
+        "percentage": "RPE8",
+        "notes": "",
+        "weight": ""
+      },
+      {
+        "name": "Glute Ham Raise",
+        "warmup": 0,
+        "sets": 4,
+        "reps": 10,
+        "percentage": "RPE8",
+        "notes": "",
+        "weight": ""
+      },
+      {
+        "name": "Leg Extension",
+        "warmup": 1,
+        "sets": 4,
+        "reps": 12,
+        "percentage": "RPE8",
+        "notes": "",
+        "weight": ""
+      },
+      {
+        "name": "Cable Pull Over",
+        "warmup": 1,
+        "sets": 3,
+        "reps": 15,
+        "percentage": "RPE8",
+        "notes": "",
+        "weight": ""
+      },
+      {
+        "name": "DB Lat. Raise",
+        "warmup": 1,
+        "sets": 3,
+        "reps": 20,
+        "percentage": "RPE8",
+        "notes": "",
+        "weight": ""
+      },
+      {
+        "name": "Reverse Pec Deck",
+        "warmup": 1,
+        "sets": 3,
+        "reps": 20,
+        "percentage": "RPE8",
+        "notes": "",
+        "weight": ""
+      },
+      {
+        "name": "EZ Skull Crushers",
+        "warmup": 1,
+        "sets": 3,
+        "reps": 15,
+        "percentage": "RPE8",
+        "notes": "",
+        "weight": ""
+      }
+    ]
+  },
+  {
+    "day": 40,
+    "complete": false,
+    "focus": "Deltoid",
+    "exercises": [
+      {
+        "name": "Overhead Press",
+        "warmup": 3,
+        "sets": 5,
+        "reps": 3,
+        "percentage": "87.5%",
+        "notes": "",
+        "weight": ""
+      },
+      {
+        "name": "Egyptian Lateral Raise",
+        "warmup": 1,
+        "sets": 3,
+        "reps": 8,
+        "percentage": "RPE8",
+        "notes": "",
+        "weight": ""
+      },
+      {
+        "name": "Pendlay Row",
+        "warmup": 1,
+        "sets": 4,
+        "reps": 12,
+        "percentage": "RPE8",
+        "notes": "",
+        "weight": ""
+      },
+      {
+        "name": "Seated Hip Abduction",
+        "warmup": 1,
+        "sets": 4,
+        "reps": 20,
+        "percentage": "RPE8",
+        "notes": "",
+        "weight": ""
+      },
+      {
+        "name": "Incline DB Curl",
+        "warmup": 1,
+        "sets": 4,
+        "reps": 10,
+        "percentage": "RPE8",
+        "notes": "",
+        "weight": ""
+      },
+      {
+        "name": "Bicycle Crunch",
+        "warmup": 1,
+        "sets": 4,
+        "reps": 15,
+        "percentage": "RPE8",
+        "notes": "",
+        "weight": ""
+      },
+      {
+        "name": "Standing Calf Raises",
+        "warmup": 1,
+        "sets": 4,
+        "reps": 12,
+        "percentage": "RPE7",
+        "notes": "",
+        "weight": ""
+      },
+      {
+        "name": "Push Up",
+        "warmup": 0,
+        "sets": 2,
+        "reps": "RPE Only",
+        "percentage": "RPE7",
+        "notes": "",
+        "weight": ""
+      }
+    ]
+  }
+]
