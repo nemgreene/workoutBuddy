@@ -93,6 +93,7 @@ function App() {
       .map((v, i) => (!v.weight ? i : null))
       .filter((v) => v !== null);
     if (indices.length === 0) {
+      cCurrent({ ...active, complete: true });
       cActive((p) => ({ ...p, complete: true }));
     } else {
       let res = window.confirm(
