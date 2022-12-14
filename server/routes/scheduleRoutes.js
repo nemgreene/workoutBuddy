@@ -60,6 +60,7 @@ module.exports = (app) => {
 
   app.get("/schedule", async (req, res) => {
     let ret = await Day.find();
+    console.log(ret);
     ret.sort((a, b) =>
       Number(a.day) > Number(b.day) ? 1 : Number(b.day) > Number(a.day) ? -1 : 0
     );
