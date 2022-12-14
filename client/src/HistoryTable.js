@@ -29,17 +29,10 @@ function HistoryTable({ active, schedule = [], activeEx }) {
   }, [activeEx]);
 
   return (
-    //   <Colead>
-    //     <tr>
-    //       <Col>{activeEx.name}</Col>
-    //     </tr>
-    //   </Colead>
     <div
       className="historyTableContainer"
       style={{ marginBottom: history.length > 0 ? "2vh" : 0 }}
     >
-      {/* <h5>{activeEx.name}</h5> */}
-      {/* <tbody> */}
       {history.length > 0 ? (
         <Row>
           <Col>SetsxReps</Col>
