@@ -2,9 +2,10 @@
   "name": "workoutbuddy",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./server/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd ./server && node index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/nemgreene/workoutBuddy/issues"
   },
-  "homepage": "https://github.com/nemgreene/workoutBuddy#readme"
+  "homepage": "https://github.com/nemgreene/workoutBuddy#readme",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
