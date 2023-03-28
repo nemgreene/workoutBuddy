@@ -13,7 +13,6 @@ import "./App.scss";
 import AddCustom from "./AddCustom";
 
 function App() {
-  const client = new ApiClient();
   const [schedule, cSchedule] = useState();
   // current == current days workout
   const [current, cCurrent] = useState(0);
@@ -21,6 +20,8 @@ function App() {
   const [active, cActive] = useState({});
   const [activeEx, cActiveEx] = useState();
   const [collapse, cCollapse] = useState(false);
+
+  const client = new ApiClient();
 
   const successStyle = active?.complete
     ? {
@@ -59,12 +60,16 @@ function App() {
   };
 
   useEffect(() => {
-    const fetch = async () => {
-      let { data } = await client.getSchedule();
+    const fetchSchedule = async () => {
+      const response = await fetch("https://ipapi.co/json/");
+      const ip = await response.json();
+      console.log(ip);
+
+      let { data } = await client.getSchedule(ip);
       cSchedule(data);
       setCurrentDay(data);
     };
-    fetch();
+    fetchSchedule();
   }, []);
 
   // when active is updated/changed, reflect changes in schedule

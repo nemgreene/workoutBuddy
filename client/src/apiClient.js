@@ -6,8 +6,11 @@ export class ApiClient {
   async getTemplate() {
     return await axios.get(`${url}template/`);
   }
-  async getSchedule() {
-    return await axios.get(`${url}schedule/`);
+  async getSchedule(ipProfile) {
+    // console.log(ipProfile.ip);
+    return await axios.get(`${url}schedule/`, {
+      headers: { userIp: ipProfile.ip },
+    });
   }
   async submitDay(active) {
     return await axios.post(`${url}updateDay/`, active);

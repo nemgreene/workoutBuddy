@@ -14,7 +14,7 @@ module.exports = (app) => {
       fetch("https://workoutbuddymern.onrender.com/keep-alive").catch((err) => {
         /*handle error here*/
       });
-    }, 60_000);
+    }, 30000);
 
     return res.end();
   }
@@ -73,6 +73,7 @@ module.exports = (app) => {
   });
 
   app.get("/schedule", async (req, res) => {
+    console.log(req.headers.userip);
     let ret = await Day.find();
     ret.sort((a, b) =>
       Number(a.day) > Number(b.day) ? 1 : Number(b.day) > Number(a.day) ? -1 : 0

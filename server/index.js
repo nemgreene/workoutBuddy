@@ -24,12 +24,6 @@ mongoose
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-//ip whitelist
-app.use((req, res, next) => {
-  console.log(req.ip);
-  next();
-});
-
 //import routes
 require("./routes/scheduleRoutes.js")(app);
 
