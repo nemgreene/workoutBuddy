@@ -11,7 +11,7 @@ module.exports = (app) => {
     console.log("Pinging Server");
 
     interval = setInterval(() => {
-      fetch("http://your-heroku-subdomain/keep-alive").catch((err) => {
+      fetch("https://workoutbuddymern.onrender.com/keep-alive").catch((err) => {
         /*handle error here*/
       });
     }, 60_000);
