@@ -3,6 +3,21 @@ const Day = require("../Day.js");
 const fs = require("fs");
 
 module.exports = (app) => {
+  let interval;
+
+  function keepAlive(req, res) {
+    if (interval) return res.end();
+
+    console.log("Pinging Server");
+
+    interval = setInterval(() => {
+      fetch("http://your-heroku-subdomain/keep-alive").catch((err) => {
+        /*handle error here*/
+      });
+    }, 60_000);
+
+    return res.end();
+  }
   app.post("/updateDay", async (req, res) => {
     try {
       const found = await Day.findOne({ day: req.body.day });
@@ -64,6 +79,8 @@ module.exports = (app) => {
     );
     res.send(ret);
   });
+
+  app.get("/keep-alive", keepAlive);
 
   app.get("/cycleReset", async (req, res) => {
     let ret = await Day.find();
