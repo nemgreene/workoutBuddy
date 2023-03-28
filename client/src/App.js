@@ -15,6 +15,7 @@ import AddCustom from "./AddCustom";
 function App() {
   const [schedule, cSchedule] = useState();
   // current == current days workout
+  const [user, changeUser] = useState(false);
   const [current, cCurrent] = useState(0);
   // active == day active in hud
   const [active, cActive] = useState({});
@@ -63,11 +64,10 @@ function App() {
     const fetchSchedule = async () => {
       const response = await fetch("https://ipapi.co/json/");
       const ip = await response.json();
-      console.log(ip);
-
       let { data } = await client.getSchedule(ip);
-      cSchedule(data);
-      setCurrentDay(data);
+      changeUser(data.user);
+      cSchedule(data.exercises);
+      setCurrentDay(data.exercises);
     };
     fetchSchedule();
   }, []);
@@ -186,19 +186,22 @@ function App() {
               active={active}
               cActive={cActive}
               cActiveEx={cActiveEx}
+              user={user}
             />
           </div>
         ) : null}
         <div className="bottomButtonContainer">
           <Row>
-            <Col>
+            <Col style={!user ? { cursor: "not-allowed" } : null}>
               <Button
+                disabled={!user}
                 variant="dark"
                 onClick={() => {
                   submitDayHandler(active?.complete ? true : false);
                 }}
                 style={{
                   border: `solid 1px ${active?.complete ? "red" : "green"}`,
+                  cursor: !user ? "not-allowed" : "auto",
                 }}
               >
                 {active?.complete ? "Reset Day" : "Complete Day"}

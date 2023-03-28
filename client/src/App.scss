@@ -171,13 +171,18 @@ $row6: 6vh;
 .inputContainer {
   height: $row5;
   padding: 0 7px;
+  position: relative;
+  z-index: 50;
   input,
   button,
   textArea {
     font-size: 10px;
   }
 }
-
+.inputButtons {
+  position: relative;
+  z-index: 55;
+}
 .downArrow,
 .upArrow {
   position: absolute;

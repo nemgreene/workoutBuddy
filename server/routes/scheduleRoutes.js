@@ -1,20 +1,23 @@
 const mongoose = require("mongoose");
 const Day = require("../Day.js");
 const fs = require("fs");
+const https = require("https");
 
 module.exports = (app) => {
   let interval;
 
   function keepAlive(req, res) {
+    console.log("Pinging");
     if (interval) return res.end();
 
-    console.log("Pinging Server");
-
     interval = setInterval(() => {
-      fetch("https://workoutbuddymern.onrender.com/keep-alive").catch((err) => {
-        /*handle error here*/
-      });
-    }, 30000);
+      https
+        .get("https://workoutbuddymern.onrender.com/keep-alive")
+        .on("error", (err) => {
+          console.log(err);
+        });
+      // }, 1200000);
+    }, 3000);
 
     return res.end();
   }
@@ -73,12 +76,15 @@ module.exports = (app) => {
   });
 
   app.get("/schedule", async (req, res) => {
-    console.log(req.headers.userip);
+    // console.log(req.headers.userip, process.env.IPS_WHITELIST.split("\n"));
+    const user = process.env.IPS_WHITELIST.split("\n").includes(
+      req.headers.userip
+    );
     let ret = await Day.find();
     ret.sort((a, b) =>
       Number(a.day) > Number(b.day) ? 1 : Number(b.day) > Number(a.day) ? -1 : 0
     );
-    res.send(ret);
+    res.send({ user, exercises: ret });
   });
 
   app.get("/keep-alive", keepAlive);

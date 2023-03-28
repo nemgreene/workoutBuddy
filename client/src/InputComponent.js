@@ -4,7 +4,14 @@ import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-function InputComponent({ activeEx, client, active, cActive, cActiveEx }) {
+function InputComponent({
+  activeEx,
+  client,
+  active,
+  cActive,
+  cActiveEx,
+  user,
+}) {
   const [text, cText] = useState({ kg: "", lb: "", notes: "" });
 
   useEffect(() => {
@@ -52,6 +59,8 @@ function InputComponent({ activeEx, client, active, cActive, cActiveEx }) {
           <Row>
             <Col>
               <Form.Control
+                disabled={!user}
+                style={!user ? { cursor: "not-allowed" } : null}
                 variant="dark"
                 className="bg-dark text-white "
                 name="kgInput"
@@ -81,6 +90,8 @@ function InputComponent({ activeEx, client, active, cActive, cActiveEx }) {
             </Col>
             <Col>
               <Form.Control
+                disabled={!user}
+                style={!user ? { cursor: "not-allowed" } : null}
                 className="bg-dark text-white "
                 name="lbInput"
                 size="sm"
@@ -110,6 +121,8 @@ function InputComponent({ activeEx, client, active, cActive, cActiveEx }) {
           </Row>
 
           <Form.Control
+            disabled={!user}
+            style={!user ? { cursor: "not-allowed" } : null}
             className="bg-dark text-white "
             name="lbInput"
             size="sm"
@@ -126,18 +139,24 @@ function InputComponent({ activeEx, client, active, cActive, cActiveEx }) {
         </Form.Group>
       </Form>
       <Button
+        disabled={!user}
+        style={!user ? { cursor: "not-allowed" } : null}
         variant="dark"
         onClick={() => {
           submitHandler();
         }}
+        className="inputButtons"
       >
         Submit
       </Button>
       <Button
+        disabled={!user}
+        style={!user ? { cursor: "not-allowed" } : null}
         variant="dark"
         onClick={() => {
           resetHandler();
         }}
+        className="inputButtons"
       >
         Reset Exercise
       </Button>
