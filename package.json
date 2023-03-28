@@ -23,7 +23,6 @@
   "homepage": "https://github.com/nemgreene/workoutBuddy#readme",
   "dependencies": {
     "concurrently": "^7.6.0",
-    "nodemon": "^2.0.20",
-    "react-icons": "^4.8.0"
+    "nodemon": "^2.0.20"
   }
 }
