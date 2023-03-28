@@ -115,8 +115,15 @@ function ActiveTable({ data, activeEx, cActiveEx, schedule }) {
                 {name === activeEx?.name ? (
                   <Row>
                     <Col className="activeNotesRow">{notes || "No Notes"}</Col>
-                    <Col xs={2}>
-                      {activeEx?.legacy.map((v) => v.split("/")[0] + " kg")}
+                    <Col className="legacy" xs={2}>
+                      {String(
+                        activeEx?.legacy
+                          .map((v) => {
+                            return v.split("/")[0];
+                          })
+                          .filter((v) => v)
+                          .reverse()
+                      )}
                     </Col>
                   </Row>
                 ) : null}

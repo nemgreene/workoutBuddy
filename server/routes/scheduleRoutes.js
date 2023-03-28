@@ -34,7 +34,6 @@ module.exports = (app) => {
   }
 
   app.post("/singleInsert/:id", async (req, res) => {
-    console.log(req.params.id);
     data = JSON.parse(
       await fs.readFileSync(`./Blocks/block${req.params.id}.json`, "utf8")
     );
@@ -74,10 +73,9 @@ module.exports = (app) => {
         legacy: e.legacy ? [...e.legacy, e.weight] : [e.weight],
         weight: "",
       }));
-      // console.log(updated);
       await Day.findByIdAndUpdate(d._id, {
         exercises: updated,
-        completed: false,
+        complete: false,
       });
     });
     res.send("ok");
