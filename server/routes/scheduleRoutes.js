@@ -16,8 +16,7 @@ module.exports = (app) => {
         .on("error", (err) => {
           console.log(err);
         });
-      // }, 1200000);
-    }, 3000);
+    }, 1200000);
 
     return res.end();
   }
