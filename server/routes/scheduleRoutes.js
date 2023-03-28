@@ -79,7 +79,11 @@ module.exports = (app) => {
     const user = process.env.IPS_WHITELIST.split("\n").includes(
       req.headers.userip
     );
-    console.log(process.env.IPS_WHITELIST.split("\n"), req.headers.userip);
+    console.log(
+      process.env.IPS_WHITELIST.split("\n"),
+      req.headers.userip,
+      user
+    );
     let ret = await Day.find();
     ret.sort((a, b) =>
       Number(a.day) > Number(b.day) ? 1 : Number(b.day) > Number(a.day) ? -1 : 0
