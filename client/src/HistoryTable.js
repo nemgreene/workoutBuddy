@@ -20,8 +20,8 @@ function HistoryTable({ active, schedule = [], activeEx }) {
         };
       })
       .filter((v) => v.exercises)
-      .reverse()
-      .slice(-5);
+      .slice(-5)
+      .reverse();
     cHistory(updated);
     return () => {
       cDescription("");
@@ -35,9 +35,10 @@ function HistoryTable({ active, schedule = [], activeEx }) {
     >
       {history.length > 0 ? (
         <Row>
-          <Col>SetsxReps</Col>
-          <Col>weight</Col>
-          <Col>%</Col>
+          <Col xs={2}>Day</Col>
+          <Col xs={3}>SetsxReps</Col>
+          <Col xs={4}>weight</Col>
+          <Col xs={3}>%</Col>
         </Row>
       ) : null}
       {history?.map((h, i) => {
@@ -56,9 +57,10 @@ function HistoryTable({ active, schedule = [], activeEx }) {
                 }
               }}
             >
-              <Col>{`${exercises.sets}x${exercises.reps}`}</Col>
-              <Col>{exercises.weight || "-"}</Col>
-              <Col>{exercises.percentage}</Col>
+              <Col xs={2}>{day}</Col>
+              <Col xs={3}>{`${exercises.sets}x${exercises.reps}`}</Col>
+              <Col xs={4}>{exercises.weight || "-"}</Col>
+              <Col xs={3}>{exercises.percentage}</Col>
             </Row>
             {Number(description.day) === Number(day) ? (
               <Row className="desc">

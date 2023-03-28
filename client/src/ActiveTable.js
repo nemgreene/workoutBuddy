@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { AiOutlineLoading } from "react-icons/ai";
 
 function ActiveTable({ data, activeEx, cActiveEx, schedule }) {
   const calculateDate = (date) => {
@@ -47,8 +48,12 @@ function ActiveTable({ data, activeEx, cActiveEx, schedule }) {
   return (
     <div className="activeTableContainer">
       <Row className="bannerRow">
-        <Col>{data?.focus}</Col>
-        <Col>{calculateDate(data?.day)}</Col>
+        {data.day ? (
+          <>
+            <Col>{data?.focus}</Col>
+            <Col>{calculateDate(data?.day)}</Col>
+          </>
+        ) : null}
       </Row>
       <Row className="headerRow">
         <Col xs={4}>Exercise</Col>
@@ -63,12 +68,22 @@ function ActiveTable({ data, activeEx, cActiveEx, schedule }) {
       ) : null}
       <div
         className="activeTableScrollContainer"
+        style={
+          data.exercises
+            ? { borderBottom: "1px solid white" }
+            : { borderBottom: "none" }
+        }
         ref={parentRef}
         onScroll={() => {
           cScrolled(childRef.current.getBoundingClientRect()["y"] > 80);
         }}
       >
         <div className="activeScrollChild" ref={childRef}>
+          {!data.exercises ? (
+            <div className="loadingContainer">
+              <AiOutlineLoading className="loaderIcon" size={25} />
+            </div>
+          ) : null}
           {data?.exercises?.map((v, i) => {
             let { name, notes, percentage, reps, sets, warmup, weight } = v;
             let prev = schedule.filter((v) => v.day == data?.day - 5);

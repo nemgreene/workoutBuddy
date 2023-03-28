@@ -34,7 +34,7 @@ function App() {
   const setCurrentDay = (data) => {
     for (let i = 0; i < data.length; i++) {
       let current = data[i];
-      if (!current.complete) {
+      if (!current.complete || i === 49) {
         cCurrent(current);
         cActive(current);
         break;
