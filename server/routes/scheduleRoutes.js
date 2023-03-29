@@ -17,7 +17,8 @@ module.exports = (app) => {
           console.log(err);
         });
       // flushing
-    }, 120000);
+    }, 600000);
+    // flushing
 
     return res.end();
   }
