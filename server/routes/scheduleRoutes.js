@@ -90,7 +90,7 @@ module.exports = (app) => {
     ret.sort((a, b) =>
       Number(a.day) > Number(b.day) ? 1 : Number(b.day) > Number(a.day) ? -1 : 0
     );
-    res.send({ user, exercises: ret });
+    res.send({ user: true, exercises: ret });
   });
 
   app.get("/keep-alive", keepAlive);
